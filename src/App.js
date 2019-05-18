@@ -19,8 +19,8 @@ class App extends React.Component {
   constructor(props){
     super(props)
 
-    //preloader
-    // Loader.load(()=>this.setState({loaded:true}))
+
+    Loader.load(()=>this.setState({loaded:true}))
   }
   
 
@@ -34,7 +34,7 @@ class App extends React.Component {
   
    <>
   
-   {/* {this.state.loaded?null:<Loader/>} */}
+   {this.state.loaded?null:<Loader/>}
     <Router>
       <Header pages={this.state.pages}/>
       <Content pages={this.state.pages}/>
