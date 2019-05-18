@@ -1,7 +1,8 @@
 import React from 'react';
-import MainNav from "./MainNav"
-import Logo from "./Logo"
 import styled from "styled-components"
+import MainNav from "./components/MainNav"
+import Logo from "./components/Logo"
+
 
 const HeadBar=styled.header`
   position:fixed;
@@ -13,13 +14,11 @@ const HeadBar=styled.header`
   height:10vh;
   justify-content:space-around;
   background-color:#ffffff;
-  border-bottom:1px solid black;
+  
 `;
 
 class Header extends React.Component {
-  constructor(props){
-    super(props)
-  }
+ 
   render(){
   return ( 
   

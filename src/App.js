@@ -1,31 +1,22 @@
 import React from "react";
-// import Logo from "./components/Logo"
-import Footer from "./components/Footer"
-import Content from "./components/Content"
+import { BrowserRouter as Router} from "react-router-dom";
 import styled from "styled-components"
-import Loader from "./components/Loader"
-import Users from "./components/Users"
-import About from "./components/About"
-import Index from "./components/Home"
-import NoMatch from "./components/NoMatch"
-import { BrowserRouter as Router,Switch,Route,NavLink} from "react-router-dom";
-// import MainNav from "./components/MainNav";
-import Header from "./components/Header"
 
+import Header from "./components/Header/Header"
 
-
-
-
-
-
-
-
+import Footer from "./components/Footer/Footer"
+import Content from "./components/Content/Content"
+import Loader from "./components/Loader/Loader"
+import Users from "./components/Content/Users"
+import About from "./components/Content/About"
+import Index from "./components/Content/Home"
+import NoMatch from "./components/Content/NoMatch"
 
 
 class App extends React.Component {
   state={
     loaded:false,
-    pages:[{to:"/",name:"Home",comp:Index,exact:true},{to:"/about",name:"About",comp:About,exact:false},{to:"/users",name:"Users",comp:Users,exact:false}]
+    pages:[{to:"/",name:"Home",comp:Index,exact:true,redirect:null},{to:"/about",name:"About",comp:About,exact:false,redirect:null},{to:"/users",name:"Users",comp:Users,exact:false,redirect:null},{to:null,name:null,comp:NoMatch,exact:false,redirect:"/"}]
   }
   constructor(props){
     super(props)
@@ -39,7 +30,7 @@ class App extends React.Component {
   }
 
   componentDidUpdate(){
-    console.log(this.state.location)
+    
   }
   
   render(){
@@ -47,7 +38,7 @@ class App extends React.Component {
   return (
   
    <>
-   {/* {this.state.loaded?null:<Loader/>} */}
+   {this.state.loaded?null:<Loader/>}
     <Router>
       <Header pages={this.state.pages}/>
       <Content pages={this.state.pages}/>

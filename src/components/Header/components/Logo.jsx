@@ -1,22 +1,23 @@
 import React from 'react';
-import logo from"../images/HeaderLogo.svg"
 import styled from "styled-components"
+import logo from "../images/HeaderLogo.svg"
+
 
 const LogoContainer=styled.div`
-  margin-top:40px;
-  position: relative;
-  width:150px;
-  height:195px;
+ 
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:10vh;
+  height:10vh;
   background-color:#ffffff;
   border-radius:50%;
 
 `
 const MainLogo=styled.img`
-  top:45px;
-  position:absolute;
-  width:150px;
-  height:150px;
-  z-index:10
+ 
+  width:9vh;
+  height:9vh;
   
 `
 

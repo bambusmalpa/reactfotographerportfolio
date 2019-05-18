@@ -35,7 +35,7 @@ const ListOfPagesElement=styled.li`
     transition:1s;
   }
   .selected{
-    background-color:#808080;
+    background-color:#eeeeee;
   
   }
 
@@ -49,14 +49,14 @@ class MainNav extends React.Component {
     const readyList=this.props.pages.map((el)=>{
         if(el.name===null)
         {return null}
-
+    
         return (
-        <ListOfPagesElement>
-        <NavLink key={el.name} to={el.to}  activeClassName="selected"exact={el.exact} >{el.name.toUpperCase()}</NavLink>
+        <ListOfPagesElement key={el.name}>
+        <NavLink key={el.name} to={el.to}  activeClassName="selected" exact={el.exact}  >{el.name.toUpperCase()}</NavLink>
       </ListOfPagesElement>)})
-
+  
   return (
-
+    
 
     <nav>
     <ListOfPages>

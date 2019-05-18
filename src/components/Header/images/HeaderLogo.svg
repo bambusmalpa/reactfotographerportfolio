@@ -7,15 +7,13 @@
            fill:transparent;
            stroke:black;
            
-           stroke-dasharray:12000;
+           stroke-dasharray:0;
            stroke-dashoffset:0;
-           animation-name: fillstroke,fillinside,vanish;
-           animation-duration:1s,0.5s,2s;
-           animation-delay:0s, 0.5s,2s;
-           <!-- animation-duration:5s,1s;
-           animation-delay:0s, 4s; -->
-           animation-direction: alternate,alternate,alternate;
-           animation-fill-mode: forwards,forwards,forwards;
+           animation-name: fillstroke,fillinside;
+           animation-duration:3s,0.5s;
+           animation-delay:3s, 6s;
+           animation-direction: alternate,alternate;
+           animation-fill-mode: forwards,forwards;
            }
    
            @keyframes fillstroke{
@@ -31,12 +29,6 @@
            @keyframes fillinside{
                from{fill:transparent}
                to{fill:black}
-           }
-           @keyframes vanish{
-                from{fill:black;
-                        stroke:black}
-               to{fill:transparent;
-                  stroke:transparent}
            }
           
        

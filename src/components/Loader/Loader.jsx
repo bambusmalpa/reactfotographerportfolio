@@ -1,5 +1,5 @@
 import React from 'react';
-import img from "../images/LoaderLogo.svg"
+import img from "./images/LoaderLogo.svg"
 import styled from "styled-components"
 
 const Loaderimg=styled.img`
@@ -19,6 +19,7 @@ position:absolute;
   align-items:center;
   animation:vanish 0.5s linear forwards;
   animation-delay:2.5s;
+  z-index:15;
   @keyframes vanish {
     from{background-color:#ffffff;}
     to{background-color:transparent;}
@@ -29,7 +30,7 @@ position:absolute;
 class Loader extends React.Component {
  
   static load(cb){
-    setTimeout(cb,3000)
+    setTimeout(cb,2200)
   }
 
 
@@ -37,6 +38,7 @@ class Loader extends React.Component {
   return ( 
   <Loadrbackground>
     <Loaderimg src={img}></Loaderimg>
+   
   </Loadrbackground>
   );}
 }
