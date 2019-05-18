@@ -9,8 +9,8 @@ import styled from "styled-components"
 
 
 const ContentContainer=styled.section`
-  padding-top:80px;
-  min-height:85vh;
+  padding-top:10vh;
+  min-height:80vh;
 
 `
 

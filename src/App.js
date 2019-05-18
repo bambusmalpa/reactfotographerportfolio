@@ -3,11 +3,9 @@ import { BrowserRouter as Router} from "react-router-dom";
 import styled from "styled-components"
 
 import Header from "./components/Header/Header"
-
 import Footer from "./components/Footer/Footer"
 import Content from "./components/Content/Content"
 import Loader from "./components/Loader/Loader"
-import Users from "./components/Content/Users"
 import About from "./components/Content/About"
 import Index from "./components/Content/Home"
 import NoMatch from "./components/Content/NoMatch"
