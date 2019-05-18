@@ -11,12 +11,12 @@ import Users from "./components/Content/Users"
 import About from "./components/Content/About"
 import Index from "./components/Content/Home"
 import NoMatch from "./components/Content/NoMatch"
-
-
+import Contact from "./components/Content/Contact"
+import Galery from "./components/Content/Galery"
 class App extends React.Component {
   state={
     loaded:false,
-    pages:[{to:"/",name:"Home",comp:Index,exact:true,redirect:null},{to:"/about",name:"About",comp:About,exact:false,redirect:null},{to:"/users",name:"Users",comp:Users,exact:false,redirect:null},{to:null,name:null,comp:NoMatch,exact:false,redirect:"/"}]
+    pages:[{to:"/",name:"Home",comp:Index,exact:true},{to:"/about",name:"O mnie",comp:About,exact:false},{to:"/galery",name:"Galeria",comp:Galery,exact:false},{to:"/contact",name:"Kontakt",comp:Contact,exact:false,},{to:null,name:null,comp:NoMatch,exact:false}]
   }
   constructor(props){
     super(props)
