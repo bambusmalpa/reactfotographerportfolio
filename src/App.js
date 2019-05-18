@@ -18,14 +18,11 @@ class App extends React.Component {
   }
   constructor(props){
     super(props)
-    Loader.load(()=>this.setState({loaded:true}))
-  }
-  
 
-  
-  componentWillUnmount(){
-    this.setState({loaded:false})
+    //preloader
+    // Loader.load(()=>this.setState({loaded:true}))
   }
+  
 
   componentDidUpdate(){
     
@@ -36,7 +33,8 @@ class App extends React.Component {
   return (
   
    <>
-   {this.state.loaded?null:<Loader/>}
+  
+   {/* {this.state.loaded?null:<Loader/>} */}
     <Router>
       <Header pages={this.state.pages}/>
       <Content pages={this.state.pages}/>

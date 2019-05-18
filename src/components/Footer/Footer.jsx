@@ -14,12 +14,12 @@ const FooterContainer=styled.footer`
 `
 
 const Author=styled.p`
-
+  
 `
 const Social=styled.div`
     display:flex;
     align-items:center;
-    justify-content:space-around;
+    justify-content:space-between;
     width:10vw;
 
 
@@ -40,7 +40,7 @@ const Footer = () => {
   return ( <FooterContainer>
 
 
-              <Author>Made with passion by bambusMalpa</Author>
+              <Author>Made with <i style={{color:"#F21A25"}}class="fas fa-heart"></i> to <i style={{color:"#61DBFB"}} class="fab fa-react fa-spin"></i> by bambusMalpa</Author>
               <Social>{socials}</Social>
               
             </FooterContainer> );
