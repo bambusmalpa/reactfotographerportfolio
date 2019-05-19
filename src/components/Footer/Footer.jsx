@@ -15,19 +15,24 @@ const FooterContainer=styled.footer`
 `
 
 const Author=styled.p`
-  
+
+   @media (max-width:768px){
+    width:50vw;
+    
+  }
 `
 const Social=styled.div`
     display:flex;
+    justify-content:space-around;
     align-items:center;
     width:15vw;
     &>i{
-      fontSize:"2vw"
+      font-size:"2vw"
     }
     @media (max-width:768px){
-    width:50vh;
+    width:40vw;
     height:10vh;
-    margin-top:0;
+    
   }
 
 `
