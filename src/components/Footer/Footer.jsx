@@ -18,7 +18,7 @@ const Author=styled.p`
 
    @media (max-width:768px){
     width:50vw;
-    
+    font-size:10px;
   }
 `
 const Social=styled.div`
@@ -26,13 +26,14 @@ const Social=styled.div`
     justify-content:space-around;
     align-items:center;
     width:15vw;
-    &>i{
-      font-size:"2vw"
+    
+    &>a{
+      font-size:25px
     }
     @media (max-width:768px){
     width:40vw;
     height:10vh;
-    
+    font-size:10px;
   }
 
 `
