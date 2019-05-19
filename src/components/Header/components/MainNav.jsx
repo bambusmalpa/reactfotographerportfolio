@@ -2,16 +2,33 @@ import React from "react";
 import {NavLink} from "react-router-dom"
 import styled from "styled-components"
 import HamburgerButton from "./HamburgerButton"
+
 const ListOfPages=styled.ul`
   display:flex;
   justify-content:space-around;
   align-items:center;
   list-style:none;
-  width:50vw;
-  height:100%;
+  width:30vw;
+  height:10vh;
   align-items:center;
-  box-sizing:border-box;
-  
+  box-sizing:border-box;}
+
+  @media (max-width:768px){
+  position:absolute;
+  flex-direction:column;
+  background-color:#ffffff;
+  width:30vw;
+  transition:0.2s;
+  top:25vh;
+  right:-30vw
+  &.on{
+    right:0vw;
+
+  }
+  &.off{
+    right:-30vw
+  }
+}
   
 `
 
@@ -29,6 +46,8 @@ const ListOfPagesElement=styled.li`
   >a{
     height: 100%;
     color:#222222;
+    background-color:#ffffff;
+    width:100%;
     text-decoration:none;
     display:block;
     box-sizing:border-box;
@@ -38,15 +57,15 @@ const ListOfPagesElement=styled.li`
     background-color:#eeeeee;
   
   }
- 
+  @media (max-width:768px){
+    width:30vw;
+  }
 
 `
 
 
 class MainNav extends React.Component {
-  state={
-    hamburgerMenu:false
-  }
+ 
 
   toggleMenu=()=>{
     this.setState({
@@ -68,13 +87,15 @@ class MainNav extends React.Component {
     
 
     <nav>
-    <ListOfPages>
+    <ListOfPages className={this.props.menuOn?"on":"off"}>
       {readyList}
-      <HamburgerButton>X</HamburgerButton>
+      
     </ListOfPages>
+    
   </nav>);
     
     }
 }
 
 export default MainNav;
+

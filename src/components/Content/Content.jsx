@@ -2,15 +2,10 @@ import React from 'react';
 import {Switch,Route} from "react-router-dom"
 import styled from "styled-components"
 
-// import Users from "./Users"
-// import About from "./About"
-// import Index from "./Home"
-// import NoMatch from "./NoMatch"
-
 
 const ContentContainer=styled.section`
   padding-top:10vh;
-  min-height:80vh;
+  min-height:85vh;
 
 `
 

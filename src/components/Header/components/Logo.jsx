@@ -4,21 +4,27 @@ import logo from "../images/HeaderLogo.svg"
 
 
 const LogoContainer=styled.div`
- 
+  margin-left:10vw;
   display:flex;
   justify-content:center;
   align-items:center;
   width:10vh;
   height:10vh;
   background-color:#ffffff;
-  border-radius:50%;
 
 `
 const MainLogo=styled.img`
- 
-  width:9vh;
-  height:9vh;
-  
+  z-index:15;
+  margin-top:7vh;
+  position:fixed;
+  width:20vh;
+  height:20vh;
+  transition:0.5s;
+  @media (max-width:768px){
+    width:10vh;
+    height:10vh;
+    margin-top:0;
+  }
 `
 
 const Logo = () => {
