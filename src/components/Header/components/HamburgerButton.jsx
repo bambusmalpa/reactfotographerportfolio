@@ -5,8 +5,9 @@ const Burger=styled.div`
   display:none;
   margin-left:40%;
   position:relative;
-  width:32px;
-  height:20px;
+  width:40px;
+  height:25px;
+  
 @media (max-width:768px){
   display:block;
 }
@@ -17,7 +18,8 @@ const Burger=styled.div`
   background-color:black;
   transition:0.5s;
   top:50%;
-  transform:translateY(-50%)
+  transform:translateY(-50%);
+  border-radius:12px;
 }
 &.hamburger>.bar:nth-of-type(1){
   top:10%;

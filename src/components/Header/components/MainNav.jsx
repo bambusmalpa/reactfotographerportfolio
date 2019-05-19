@@ -1,7 +1,6 @@
 import React from "react";
 import {NavLink} from "react-router-dom"
 import styled from "styled-components"
-import HamburgerButton from "./HamburgerButton"
 
 const ListOfPages=styled.ul`
   display:flex;
@@ -98,4 +97,5 @@ class MainNav extends React.Component {
 }
 
 export default MainNav;
+
 

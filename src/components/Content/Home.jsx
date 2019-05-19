@@ -15,7 +15,6 @@ background-position:center;
 
 
 function Index() {
-  console.log(url)
   return(
     <>
         <HomeSection >
