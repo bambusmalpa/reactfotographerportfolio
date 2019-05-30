@@ -20,12 +20,12 @@ const ListOfPages=styled.ul`
   width:30vw;
   transition:0.2s;
   margin-top:25vh;
-  right:-30vw
+  right:-30vw;
   &.on{
     right:0vw;
   }
   &.off{
-    right:-30vw
+    right:-30vw;
   }}`
 
 const ListOfPagesElement=styled.li`
