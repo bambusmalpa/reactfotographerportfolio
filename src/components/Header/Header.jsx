@@ -14,9 +14,7 @@ const HeadBar=styled.header`
   justify-content:space-around;
   background-color:#ffffff;
   @media (max-width:768px){
-}
-`;
-
+}`
 class Header extends React.Component {
   state={
     menuOn:false,

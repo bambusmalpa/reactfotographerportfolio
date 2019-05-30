@@ -4,13 +4,18 @@ import styled from "styled-components"
 const EventsContainer=styled.section`
   margin-left:auto;
   margin-right:auto;
- 
+  margin-top:5vh;
   width:80vw;
   display:flex;
   flex-direction:column;
   justify-content:space-between;
   align-items:center;
   padding-bottom:5vh;
+  >h2{
+    padding-left:2%;
+    padding-right:2%;
+    background-color:#eeeeee;
+  }
   >p{
     margin-top:2vh;
   }
