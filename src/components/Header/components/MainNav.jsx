@@ -2,12 +2,13 @@ import React from "react";
 import {NavLink} from "react-router-dom"
 import styled from "styled-components"
 
+
 const ListOfPages=styled.ul`
   display:flex;
   justify-content:space-around;
   align-items:center;
   list-style:none;
-  width:30vw;
+  width:40vw;
   height:10vh;
   align-items:center;
   box-sizing:border-box;}
@@ -18,18 +19,14 @@ const ListOfPages=styled.ul`
   background-color:#ffffff;
   width:30vw;
   transition:0.2s;
-  top:25vh;
+  margin-top:25vh;
   right:-30vw
   &.on{
     right:0vw;
-
   }
   &.off{
     right:-30vw
-  }
-}
-  
-`
+  }}`
 
 const ListOfPagesElement=styled.li`
   display:flex;
@@ -43,14 +40,19 @@ const ListOfPagesElement=styled.li`
   box-sizing:border-box;
 
   >a{
+
     height: 100%;
     color:#222222;
     background-color:#ffffff;
+    display:block;
     width:100%;
     text-decoration:none;
-    display:block;
     box-sizing:border-box;
     transition:1s;
+  }
+
+  >a:hover{
+    background-color:red;
   }
   .selected{
     background-color:#eeeeee;
@@ -65,14 +67,7 @@ const ListOfPagesElement=styled.li`
 
 class MainNav extends React.Component {
  
-
-  toggleMenu=()=>{
-    this.setState({
-      hamburgerMenu:!this.setState.hamburgerMenu
-    })
-  }
- 
-  render(){
+ render(){
     const readyList=this.props.pages.map((el)=>{
         if(el.name===null)
         {return null}

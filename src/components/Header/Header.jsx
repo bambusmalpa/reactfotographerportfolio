@@ -33,7 +33,7 @@ class Header extends React.Component {
     <HeadBar>
       <Logo/>
       <HamburgerButton menuOn={this.state.menuOn} toggleMenuOn={this.toggleMenuOn}  />
-      <MainNav menuOn={this.state.menuOn} pages={this.props.pages}/>
+      <MainNav menuOn={this.state.menuOn} pages={this.props.pages} toggleMenuOn={this.toggleMenuOn}/>
       
     </HeadBar>
  

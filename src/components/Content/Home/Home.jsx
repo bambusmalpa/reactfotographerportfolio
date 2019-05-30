@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import url from "./Home/images/homeFoto.jpg"
+import url from "./images/homeFoto.jpg"
 
 const HomeSection=styled.section`
 padding-top:10vh;

@@ -5,13 +5,13 @@ import styled from "styled-components"
 
 const FooterContainer=styled.footer`
   width:100%;
-  background-color:transparent;
+  background-color:#ffffff;
   height:5vh;
   color:black;
   display:flex;
   align-items:center;
   justify-content:space-around;
-  
+ 
 `
 
 const Author=styled.p`
@@ -53,7 +53,7 @@ const Footer = () => {
   return ( <FooterContainer>
 
 
-              <Author>Made with <i style={{color:"#F21A25"}}className="fas fa-heart"></i> to <i style={{color:"#61DBFB"}} className="fab fa-react fa-spin"></i> by bambusMalpa</Author>
+              <Author>Made with <i style={{color:"#F21A25"}} className="fas fa-heart"></i> to <i style={{color:"#61DBFB"}} className="fab fa-react fa-spin"></i> by bambusMalpa</Author>
               <Social>Śledz mnie na: {socials}</Social>
               
             </FooterContainer> );
