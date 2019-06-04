@@ -1,7 +1,8 @@
 import React from 'react';
+import Wip from "../Wip"
 
 const Contact = () => {
-  return ( <div>kontakt</div> );
+  return ( <Wip/> );
 }
  
 export default Contact;

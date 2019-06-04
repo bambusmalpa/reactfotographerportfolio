@@ -4,12 +4,12 @@ import Lightbox from 'react-images';
 import styled from "styled-components"
 
 const GalleryContainer=styled.div`
-  >div>div>img{
-    filter:grayscale(100%);
-    transition:0.5s;
-  }
-  &>div>div>img:hover{
-    filter:grayscale(0);
+  // >div>div>img{
+  //   filter:grayscale(100%);
+  //   transition:0.5s;
+  // }
+  // &>div>div>img:hover{
+  //   filter:grayscale(0);
   }}`
 
 function importAll(r) {
