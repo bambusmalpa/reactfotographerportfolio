@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from "react-router-dom"
 import styled from "styled-components"
 import MainNav from "./components/MainNav"
 import Logo from "./components/Logo"
@@ -29,7 +30,8 @@ class Header extends React.Component {
   return ( 
   
     <HeadBar>
-      <Logo/>
+      <NavLink to="/" exact><Logo/></NavLink>
+      
       <HamburgerButton menuOn={this.state.menuOn} toggleMenuOn={this.toggleMenuOn}  />
       <MainNav menuOn={this.state.menuOn} pages={this.props.pages} toggleMenuOn={this.toggleMenuOn}/>
       
