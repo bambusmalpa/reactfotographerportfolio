@@ -18,7 +18,7 @@ position:absolute;
   justify-content:center;
   align-items:center;
   animation:vanish 0.5s linear forwards;
-  animation-delay:2s;
+  animation-delay:1.5s;
   z-index:15;
   @keyframes vanish {
     from{background-color:#ffffff;}
