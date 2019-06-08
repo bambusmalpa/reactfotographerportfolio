@@ -4,23 +4,22 @@ import Lightbox from 'react-images';
 import styled from "styled-components"
 
 const GalleryContainer=styled.div`
-  // >div>div>img{
-  //   filter:grayscale(100%);
-  //   transition:0.5s;
-  // }
-  // &>div>div>img:hover{
-  //   filter:grayscale(0);
-  }}`
+ `
 
 function importAll(r) {
     return r.keys().map(r);
   }
   const staticImages = importAll(require.context('./images', false, /\.(webp)$/));
+  
+  
+
+
+
+
   const photos=staticImages.map((el,index)=>{ return{
-        src:el,
-        width: 3,
-        height: 3,
-        
+    width: el.split("-")[1],
+    height: el.split("-")[2],
+    src:el,
   }})
 
     
@@ -28,7 +27,8 @@ function importAll(r) {
   class Galleryies extends React.Component {
     constructor() {
       super();
-      this.state = { currentImage: 0 };
+      this.state = { currentImage: 0,
+                    };
       this.closeLightbox = this.closeLightbox.bind(this);
       this.openLightbox = this.openLightbox.bind(this);
       this.gotoNext = this.gotoNext.bind(this);
@@ -56,7 +56,10 @@ function importAll(r) {
         currentImage: this.state.currentImage + 1,
       });
     }
+   
+
     render() {
+      console.log(photos)
       return (
         <GalleryContainer>
           <Gallery photos={photos} onClick={this.openLightbox} />
