@@ -14,6 +14,7 @@ const HeadBar=styled.header`
   height:10vh;
   justify-content:space-around;
   background-color:#ffffff;
+  box-shadow: 0px 6px 18px -1px rgba(0,0,0,0.75);
   @media (max-width:768px){
 }`
 class Header extends React.Component {

@@ -7,13 +7,14 @@ height:50vh;
 
 `
 const Sign=styled.div`
-margin-left:auto;
-margin-right:auto;
+position:absolute
+left:50%;
+top:50%;
 width: 150px;
 height: 150px;
 background-color: #ffff00;
 border:5px solid #000000;
-transform:translateY(50%)rotate(45deg);
+transform:translate(-50%,-50%)rotate(45deg);
 transform-origin: center center;
 display: flex;
 justify-content: center;
@@ -23,6 +24,7 @@ font-weight: bold;
 font-size: 24px;
 border-radius:5px;
 box-shadow: 0px 0px 0px 5px rgba(255,255,0,1);
+z-index:-1;
 
 >div{
     height: 50%;

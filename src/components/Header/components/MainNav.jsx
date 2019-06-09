@@ -21,6 +21,7 @@ const ListOfPages=styled.ul`
   transition:0.2s;
   margin-top:25vh;
   right:-30vw;
+  z-index:100;
   &.on{
     right:0vw;
   }

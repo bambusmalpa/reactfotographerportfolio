@@ -5,7 +5,7 @@ import styled from "styled-components"
 
 const ContentContainer=styled.section`
   padding-top:10vh;
-  min-height:85vh;
+  min-height:80vh;
 
 `
 

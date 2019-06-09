@@ -39,7 +39,7 @@ class App extends React.Component {
   
    <>
   
-   {this.state.loaded?null:<Loader/>}
+   {/* {this.state.loaded?null:<Loader/>} */}
     <Router>
       <Header pages={this.state.pages}/>
       <Content pages={this.state.pages}/>
